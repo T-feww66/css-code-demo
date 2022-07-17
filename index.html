@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> CSS IN HTML</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="main.css">
+        <!-- Internal: tao mot style de chinh sua trong css -->
+
+        <style>
+            h1{
+                color: red;
+            }
+
+            /* Equal specificity */
+            h1.heading-class{
+                color: blue;
+                font-size: 28px;
+            }
+            h1.heading-class{
+                color: violet;
+                font-size: 23px;
+            }
+
+            a::after{
+                content: "("attr(href)")";
+            }
+        </style>
+    </head>
+
+    <body>
+        <!-- INLINE -->
+        <!-- tao mot style ngay trong the de chinh sua css -->
+        <h1> CSS in HTML</h1>
+        <h2 style="color: blue;font-size: 20px">Internal</h2>
+        <h2>External</h2>
+        <h2>Inline</h2>
+
+
+
+
+        <h1 class="first-heading">Selectors</h1>
+        <ul id="unordered-list">
+            <li>ID</li>
+            <li>CLASS</li>
+        </ul>
+        <!-- muc do uu tien trong css -->
+        <h1 class="heading-class">Prority</h1>
+        <ul>
+            <li>Internal, External</li>
+            <li>Inline-1000</li>
+            <li>Id-100</li>
+            <li>class-10</li>
+            <li>tag-1</li>
+            <!-- hai class hoac id giong nhau thi cai nao moi tao se duoc uu tien hon -->
+            <li>Equal Specificity</li>
+            <!-- diem la 0 -->
+            <li> Universal Selector and inherited</li>
+        </ul>
+
+
+        <div class="box box1">box 1</div>
+        <div class="box box2">box 2</div>
+        <div class="box box3">box 3</div>
+        <div class="box box4">box 4</div>
+
+
+        <!-- CSS Functions -->
+        <div>
+            <h1>CSS Functions</h1>
+            <ul>
+                <li>var():bien trong css</li>
+                <li>linear-gradient()</li>
+                <li>rgba(): mau trong suot</li>
+                <li>calc(): tinh toan trong css</li>
+                <li>rgb(): mau thuong</li>
+                <li>attr: thuoc tinh cua html </li>
+            </ul>
+
+
+            <!-- su dung attr() -->
+            <a href="fullstack.edu.vn">Hoc lap trinh</a>
+
+        </div>
+        <div class="box5" data-title="day la box mau do"></div>
+
+        <div class="container"></div>
+    </body>
+</html>

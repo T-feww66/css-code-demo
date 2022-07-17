@@ -1,0 +1,94 @@
+/* External: tao mot duong link trong head cua html sau do goi the css ben css main */
+h2{
+    color: green;
+    font-size: 20px;
+}
+
+/* ID IN CSS */
+#unordered-list{
+    color:green;
+    font-size: 24px;
+}
+
+/* CLASS IN CSS */
+.first-heading{
+    color:rgb(62, 29, 62);
+    font-size: 26px; 
+}
+
+.parent{
+    font-size: 30px;
+    color: coral;
+}
+
+html{
+    color: black;
+}
+
+li{
+    color: green;
+    font-size: 18;
+}
+
+.box{
+    height: 50px;
+}
+/* o cac box nay thi do rong cua % phu thuoc vao
+the cha chua no nen 100% = 50px */
+.box1{
+    width: 25%;
+    background-color: red;
+}
+
+.box2{
+    width: 50%;
+    background-color: blue;
+}
+
+.box3{
+    width: 75%;
+    background-color: green;
+}
+
+.box4{
+    width: 100%;
+    background-color: violet;
+}
+
+.box5{
+    width: 500px;
+    height:500px;
+    background-color: #ff0019;
+}
+
+/* su dung attr trong css */
+.box5::after{
+    content: attr(data-title);
+}
+
+/* su dung pseudo classes(lop gia) trong css */
+.box5:hover{
+    background-color: rgb(246, 115, 115);
+}
+
+/* su dung active */
+.box5:active{
+    background-color: rgb(93, 222, 93);
+}
+
+/* pseudo-element  */
+.container{
+    height: 300px;
+    width: 300px;
+    background-color: blue;
+    margin-top: 20px;
+}
+.container::after{
+    content: "FACEBOOK";
+    color: #fff;
+    display: block;
+    background-color: red;
+    width: 150px;
+    height: 150px;
+}
+
